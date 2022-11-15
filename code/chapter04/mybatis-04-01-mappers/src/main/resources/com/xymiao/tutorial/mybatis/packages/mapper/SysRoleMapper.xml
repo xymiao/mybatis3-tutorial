@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xymiao.tutorial.mybatis.packages.mapper.SysRoleMapper">
+
+    <select id="getRoleInfo" resultType="com.xymiao.tutorial.mybatis.packages.pojo.SysRole">
+        select role_id, role_name, valid_flag from sys_role where role_id = #{roleId}
+    </select>
+</mapper>
