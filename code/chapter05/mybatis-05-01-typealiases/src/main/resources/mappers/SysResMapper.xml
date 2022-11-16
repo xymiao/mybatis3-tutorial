@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xymiao.tutorial.mybatis.mapper.SysResMapper">
+
+    <select id="queryResListByValidFlag" resultType="SysRes">
+        select res_id, role_id, res_name, res_url, valid_flag from sys_res where valid_flag = #{validFlag}
+    </select>
+</mapper>
